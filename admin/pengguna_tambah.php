@@ -1,23 +1,23 @@
 <?php
 $title = 'pengguna';
 require 'functions.php';
+$query = 'SELECT * FROM user';
+$data = ambildata($conn, $query);
+
 if (isset($_POST['btn-simpan'])) {
-    $nama     = $_POST['nama_user'];
-    $email = $_POST['email'];
-    $username = $_POST['username'];
+    $nama   = stripslashes($_POST['nama_user']);
+    $email = stripslashes($_POST['email']);
+    $username   = stripslashes($_POST['username']);
     $pass     = md5($_POST['password']);
-    $role     = $_POST['role'];
-    if ($role == 'kasir') {
-        $query = "INSERT INTO user (nama_user,email,username,password,role,) values ('$nama','$email','$username','$pass','$role')";
-    } else {
-        $query =
-            "INSERT INTO user (nama_user,email,username,password,role,) values ('$nama','$email','$username','$pass','$role')";
-    }
+    $role   = stripslashes($_POST['role']);
+
+    $query = "INSERT INTO user (nama_user,email,username,password,role) values ('$nama','$email','$username','$pass','$role')";
+
     $execute = bisa($conn, $query);
     if ($execute == 1) {
         $success = 'true';
         $title = 'Berhasil';
-        $message = 'Berhasil menambahkan ' . $role . ' baru';
+        $message = 'Berhasil Simpan Data';
         $type = 'success';
         header('location: index.php?crud=' . $success . '&msg=' . $message . '&type=' . $type . '&title=' . $title);
     } else {

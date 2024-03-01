@@ -63,6 +63,11 @@
                                                                     echo 'active';
                                                                 } ?>"><i class="fa fa-user fa-fw" aria-hidden="true"></i>CRUD</a>
                     </li>
+                    <li>
+                        <a href="getlistuser.php" class="waves-effect <?php if ($title == 'getlistuser') {
+                                                                            echo 'active';
+                                                                        } ?>"><i class="fa fa-user fa-fw" aria-hidden="true"></i> GET LIST USER</a>
+                    </li>
                 </ul>
                 <div class="center p-20">
                     <a href="logout.php" class="btn btn-danger btn-block waves-effect waves-light">LOGOUT</a>

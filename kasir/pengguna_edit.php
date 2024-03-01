@@ -65,7 +65,7 @@ require 'layout_header.php';
                         <input type="text" name="nama_user" class="form-control" value="<?= $edit['nama_user'] ?>">
                     </div>
                     <div class="form-group">
-                        <label>Emaol</label>
+                        <label>Email</label>
                         <input type="email" name="email" class="form-control" value="<?= $edit['email'] ?>">
                     </div>
                     <div class="form-group">

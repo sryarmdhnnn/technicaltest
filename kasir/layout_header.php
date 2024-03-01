@@ -47,7 +47,7 @@
                         <a class="nav-toggler open-close waves-effect waves-light hidden-md hidden-lg" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
                     </li>
                     <li>
-                        <a class="profile-pic" href="#"><b class="hidden-xs">ADMIN</b></a>
+                        <a class="profile-pic" href="#"><b class="hidden-xs">KASIR</b></a>
                     </li>
                 </ul>
             </div>
@@ -62,6 +62,11 @@
                         <a href="index.php" class="waves-effect <?php if ($title == 'Pengguna') {
                                                                     echo 'active';
                                                                 } ?>"><i class="fa fa-user fa-fw" aria-hidden="true"></i>CRUD</a>
+                    </li>
+                    <li>
+                        <a href="getlistuser.php" class="waves-effect <?php if ($title == 'getlistuser') {
+                                                                            echo 'active';
+                                                                        } ?>"><i class="fa fa-user fa-fw" aria-hidden="true"></i> GET LIST USER</a>
                     </li>
                 </ul>
                 <div class="center p-20">
