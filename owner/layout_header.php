@@ -37,9 +37,6 @@
                         <b style="color:white">
                             SRD
                         </b>
-                        <span class="hidden-xs text-light">
-                            LAUNDRY
-                        </span>
                     </a>
                 </div>
                 <ul class="nav navbar-top-links navbar-right pull-right">
